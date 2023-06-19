@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: hsl(228, 12%, 48%);
+}
+
+.container {
+  height: 97vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.left-container {
+  height: 60%;
+  width: 85%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./images/image-product-mobile.jpg);
+}
+
+.right-container {
+  width: 85%;
+  font-size: 14px;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: .8rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 400;
+  letter-spacing: .3rem;
+}
+
+h2 {
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.5rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+  color: hsl(158, 36%, 37%);
+}
+
+h3 span {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-size: .8rem;
+  height: 100%;
+  margin: 1rem;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  padding: 1rem;
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  font-size: 1rem;
+  border: none;
+}
+
+button img {
+  margin-right: 1.1rem;
+}
+
+@media(min-width: 850px) {
+
+  .container {
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+  }
+
+  body {
+    background-color: hsl(30, 38%, 92%);
+  }
+
+  .right-container {
+    height: 67%;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .left-container {
+    height: 67%;
+    background-image: url(./images/image-product-desktop.jpg);
+  }
+
+}
